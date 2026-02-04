@@ -1,8 +1,8 @@
-# Mini-Sumo Robot - Exemple Complet C++ pour Arduino IDE
+# Mini-Sumo Robot - Exemple C++ pour Arduino IDE
 
 ## Description
 
-Ce projet est un exemple pédagogique complet d'un robot mini-sumo programmé en C++ pour ESP32, conçu spécifiquement pour enseigner les concepts avancés de C++ dans un contexte de robotique embarquée.
+Ce projet est un exemple d'un robot mini-sumo programmé en C++ pour ESP32, conçu pour enseigner les concepts de C++ dans un contexte de robotique embarquée.
 
 **Version Arduino IDE** - Fichier unique .ino prêt à téléverser.
 
@@ -254,55 +254,3 @@ if (robot->isRunning() && !strategy_changed && (millis() - start_time > 15000)) 
 | Const | 145-152 | `const` après fonction membre |
 | RAII | 253-276 | Ressources acquises/libérées auto |
 
-## Progression d'Enseignement Suggérée
-
-### Séance 1 : Fondamentaux (1-2h)
-1. Montrer le namespace et la configuration
-2. Expliquer les classes `Motor` et `BaseSensor`
-3. Démontrer constructeurs/destructeurs avec Serial.print
-
-### Séance 2 : Orienté Objet (1-2h)
-1. Héritage : `LineSensor` extends `BaseSensor`
-2. Polymorphisme : créer une nouvelle `Strategy`
-3. Exercice : implémenter `UltrasonicSensor`
-
-### Séance 3 : Avancé (1-2h)
-1. Operator overloading avec `MotorSpeed`
-2. Templates : créer `average<T>()` pour filtrer capteurs
-3. STL : utiliser `std::find_if` avec lambda
-
-### Séance 4 : Moderne et Pratique (1-2h)
-1. Lambdas : callbacks pour événements
-2. RAII : gérer fichier SD ou LED
-3. Projet final : robot autonome complet
-
-## Ressources Complémentaires
-
-### Documentation
-- [ESP32 Arduino Core](https://docs.espressif.com/projects/arduino-esp32/)
-- [C++ Reference](https://en.cppreference.com/)
-- [Arduino Language Reference](https://www.arduino.cc/reference/en/)
-
-### Tutoriels Recommandés
-- Polymorphisme : chercher "C++ virtual functions tutorial"
-- STL : chercher "C++ STL containers tutorial"
-- RAII : chercher "C++ RAII pattern"
-
-## Licence
-
-Code pédagogique libre d'utilisation pour l'enseignement du C++.
-
-## Support
-
-Pour questions ou problèmes :
-1. Vérifier la section Dépannage ci-dessus
-2. Observer le moniteur série pour diagnostics
-3. Tester chaque composant individuellement
-
-## Auteur
-
-Créé comme exemple pédagogique pour l'enseignement du C++ en robotique embarquée avec Arduino IDE.
-
----
-
-**Bon apprentissage du C++ avec votre robot mini-sumo ! 🤖**
