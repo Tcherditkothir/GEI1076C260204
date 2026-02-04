@@ -1,6 +1,6 @@
 # Guide Pédagogique - Concepts C++ par Ordre de Présentation
 
-Ce document guide l'enseignant à travers chaque concept C++ du code, avec des références précises aux lignes de code et des exercices suggérés.
+Ce document vous guide à travers chaque concept C++ du code, avec des références précises aux lignes de code et des exercices suggérés.
 
 ---
 
@@ -510,72 +510,3 @@ public:
 
 ### Exercice suggéré
 Créer une classe `Timer` qui démarre dans le constructeur et affiche le temps écoulé dans le destructeur.
-
----
-
-## PROGRESSION D'ENSEIGNEMENT RECOMMANDÉE
-
-### Séance 1 : Bases
-1. Namespace (organisation)
-2. Classes et encapsulation (structure)
-3. Constructeurs/Destructeurs (cycle de vie)
-
-### Séance 2 : Orienté Objet
-4. Héritage (réutilisation)
-5. Polymorphisme (flexibilité)
-6. Const correctness (sécurité)
-
-### Séance 3 : Fonctionnalités Avancées
-7. Operator overloading (lisibilité)
-8. Templates (généricité)
-9. Références (efficacité)
-
-### Séance 4 : STL et Moderne
-10. STL Containers (productivité)
-11. Lambda expressions (concision)
-12. RAII (gestion ressources)
-
----
-
-## EXERCICES INTÉGRÉS
-
-### Niveau Débutant
-1. Modifier les pins dans le namespace
-2. Changer le seuil des capteurs de ligne
-3. Ajouter un message Serial dans une lambda
-
-### Niveau Intermédiaire
-1. Créer une nouvelle stratégie (ex: SpinStrategy)
-2. Implémenter un capteur ultrasonique héritant de BaseSensor
-3. Ajouter operator- à MotorSpeed
-
-### Niveau Avancé
-1. Implémenter un système de logging avec RAII (ouverture/fermeture fichier)
-2. Créer un template de filtre (moyenne mobile) pour lisser les lectures capteurs
-3. Utiliser std::algorithm avec lambdas pour trouver le capteur avec lecture max
-
----
-
-## POINTS D'ATTENTION POUR L'ENSEIGNANT
-
-### Erreurs Courantes à Anticiper
-- Oublier `virtual` dans destructeur de classe de base
-- Confusion entre référence et pointeur
-- Oublier `const` dans méthodes qui ne modifient pas
-- Fuites mémoire avec `new` sans `delete` correspondant
-
-### Démonstrations Visuelles Suggérées
-- Debugger pour voir l'ordre constructeur/destructeur
-- Moniteur série pour observer le polymorphisme en action
-- Mesure mémoire : vector vs array
-- Benchmark : passage par valeur vs référence
-
-### Extensions Possibles
-- Ajouter capteur ultrasonique (nouveau type dérivé)
-- Implémenter machine à états (enum + switch)
-- Logger avec timestamps (RAII + fichier SD)
-- Communication Bluetooth (callbacks avec lambdas)
-
----
-
-Ce guide permet de présenter chaque concept de manière isolée tout en montrant son utilité dans un contexte pratique et cohérent.
