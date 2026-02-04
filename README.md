@@ -2,11 +2,11 @@
 
 ## Description
 
-Ce projet est un exemple pédagogique complet d'un robot mini-sumo programmé en C++ pour ESP32, conçu spécifiquement pour enseigner les concepts avancés de C++ dans un contexte de robotique embarquée.
+Ce projet est un exemple d'un robot mini-sumo programmé en C++ pour ESP32, conçu pour enseigner les concepts avancés de C++ dans un contexte de robotique embarquée.
 
 ## Objectifs Pédagogiques
 
-Le code illustre **tous** les concepts C++ essentiels pour la programmation embarquée :
+Le code illustre les concepts C++ essentiels pour la programmation embarquée :
 
 1. **Namespace** - Organisation du code
 2. **Références** - Passage de paramètres efficace
@@ -216,10 +216,4 @@ private:
 - Vérifier le câblage des capteurs IR
 - Observer les valeurs brutes dans le moniteur série
 
-## Licence
 
-Code pédagogique libre d'utilisation pour l'enseignement du C++.
-
-## Auteur
-
-Créé comme exemple pédagogique pour l'enseignement du C++ en robotique embarquée.
